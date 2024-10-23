@@ -7,4 +7,12 @@ The goal:
 
 ## Our activities
 
+- Pallets and Contracts
+- Standards
+- Multicall
+- Account Abstraction
+- Proxies
+
 ## Partner activities
+
+- ERC721 in Sol vs ink!
