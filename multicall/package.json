@@ -1,0 +1,15 @@
+{
+  "name": "multicall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "play": "jiti playground"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jiti": "^2.3.3"
+  }
+}
