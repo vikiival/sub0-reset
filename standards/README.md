@@ -50,3 +50,18 @@ Base URI implementation is missing but clever devs also figured it out.
 Why is this important?
 
 
+## The task
+
+Your task is to write a code that will change the metadata of the NFT in Viki's collection
+
+Your script has to contain:
+1. Read and validate a JSON metadata
+2. Create a collection on nfts pallet
+3. Set metadata, max supply and permission to mint publicly for 0.1 PAS
+4. Write a code to mint a token
+
+
+### I feel like I need more
+
+Find a way how would you dynamically setmetadata for external users on the nfts pallet.
+

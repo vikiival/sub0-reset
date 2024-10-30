@@ -85,3 +85,30 @@ Yes. - 3 types
 
 Can I use the batch calls in Solidity? 
 [Yes, on moonbeam](https://docs.moonbeam.network/builders/ethereum/precompiles/ux/batch/#find-a-contract-interactions-call-data)
+
+## The task
+
+Your task is to write a code that will mint one token, one nft from one address and sends it to another address in one transaction.
+
+Your script has to contain:
+1. Mint a token on assets pallet
+2. Mint a NFT using nfts pallet
+3. Send both to another address
+4. create system.remark with following format: task_multicall/address
+
+
+## I feel like I need more
+
+### Polkadoot let's gooo
+
+Writing/Hacking: Try to come up with a new use case for batch calls in Polkadot.
+
+### I speak Solidity
+
+Implement batch calls in Solidity. You can either use approaches above or come up with your own.
+
+## To sumbit
+
+- Submit a link to the code
+- Attach a transaction hash
+- 
