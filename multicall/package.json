@@ -12,9 +12,12 @@
   "dependencies": {
     "@noble/curves": "^1.6.0",
     "@polkadot-api/descriptors": "file:.papi/descriptors",
+    "@subsquid/ss58": "^2.0.2",
+    "dotenv": "^16.4.5",
     "polkadot-api": "^1.6.5"
   },
   "devDependencies": {
+    "@types/node": "^22.8.7",
     "jiti": "^2.3.3"
   }
 }

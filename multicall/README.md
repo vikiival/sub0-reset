@@ -111,4 +111,3 @@ Implement batch calls in Solidity. You can either use approaches above or come u
 
 - Submit a link to the code
 - Attach a transaction hash
-- 

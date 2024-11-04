@@ -8,8 +8,9 @@ const typedApi = {
 };
 
 export type Chain = keyof typeof polkadotConfig;
+export const CHAIN: Chain = 'ahpas'
 
-export function magicApi<T>(chain: "ahpas") {
+export function magicApi<T>(chain: Chain = CHAIN) {
 	const client = createClient(getWsProvider(polkadotConfig[chain].wss));
 	return client.getTypedApi(typedApi[chain]);
 }

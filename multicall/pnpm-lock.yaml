@@ -14,10 +14,19 @@ importers:
       '@polkadot-api/descriptors':
         specifier: file:.papi/descriptors
         version: file:.papi/descriptors(polkadot-api@1.6.5(jiti@2.3.3)(rxjs@7.8.1)(smoldot@2.0.30))
+      '@subsquid/ss58':
+        specifier: ^2.0.2
+        version: 2.0.2
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       polkadot-api:
         specifier: ^1.6.5
         version: 1.6.5(jiti@2.3.3)(rxjs@7.8.1)(smoldot@2.0.30)
     devDependencies:
+      '@types/node':
+        specifier: ^22.8.7
+        version: 22.8.7
       jiti:
         specifier: ^2.3.3
         version: 2.3.3
@@ -392,11 +401,20 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
+  '@subsquid/ss58-codec@1.2.3':
+    resolution: {integrity: sha512-PFWGOYDVEa1F+u5NoH4pJcBRCe4vv6B0U4nvgmwTA+PShhVB8aC6TjZZmMOE8/BLEDjRIpT7avpz7VR7zI6H0A==}
+
+  '@subsquid/ss58@2.0.2':
+    resolution: {integrity: sha512-2chHMJ7jXvZzYQiXiA5MYYAVBobPcnQxWt3/jsiiZT6vWorjlVElXoQjZ0G/FKRHCcJ4GD10zDd8sG+7sPp2fw==}
+
+  '@subsquid/util-internal-hex@1.2.2':
+    resolution: {integrity: sha512-E43HVqf23jP5hvtWF9GsiN8luANjnJ1daR2SVTwaIUAYU/uNjv1Bi6tHz2uexlflBhyxAgBDmHgunXZ45wQTIw==}
+
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
-  '@types/node@22.8.4':
-    resolution: {integrity: sha512-SpNNxkftTJOPk0oN+y2bIqurEXHTA2AOZ3EJDDKeJ5VzkvvORSvmQXGQarcOzWV1ac7DCaPBEdMDxBsM+d8jWw==}
+  '@types/node@22.8.7':
+    resolution: {integrity: sha512-LidcG+2UeYIWcMuMUpBKOnryBWG/rnmOHQR5apjn8myTQcx3rinFRn7DcIFhMnS0PPFSC6OafdIKEad0lj6U0Q==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -420,8 +438,20 @@ packages:
   any-promise@1.3.0:
     resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
 
+  b4a@1.6.7:
+    resolution: {integrity: sha512-OnAYlL5b7LEkALw87fUVafQw5rVR9RjwGd4KUwNQ6DrrNmaVaUCgLipfVlzrPQ4tWOR9P0IXGNOx50jYCCdSJg==}
+
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  base-x@4.0.0:
+    resolution: {integrity: sha512-FuwxlW4H5kh37X/oW59pwTzzTKRzfrrQwhmyspRM7swOEZcHtDZSCt45U6oKgtuFE+WYPblePMVIPR4RZrh/hw==}
+
+  blake2b-wasm@2.4.0:
+    resolution: {integrity: sha512-S1kwmW2ZhZFFFOghcx73+ZajEfKBqhP82JMssxtLVMxlaPea1p9uoLiUZ5WYyHn0KddwbLc+0vh4wR0KBNoT5w==}
+
+  blake2b@2.1.4:
+    resolution: {integrity: sha512-AyBuuJNI64gIvwx13qiICz6H6hpmjvYS5DGkG6jbXMOT8Z3WUJ3V1X0FlhIoT1b/5JtHE3ki+xjtMvu1nn+t9A==}
 
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
@@ -491,6 +521,10 @@ packages:
   detect-indent@7.0.1:
     resolution: {integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==}
     engines: {node: '>=12.20'}
+
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -644,6 +678,9 @@ packages:
 
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
+
+  nanoassert@2.0.0:
+    resolution: {integrity: sha512-7vO7n28+aYO4J+8w96AzhmU8G+Y/xpPDJz/se19ICsqj/momRbb9mh9ZUtkoJ5X3nTnPdhEJyc0qnM6yAsHBaA==}
 
   normalize-package-data@6.0.2:
     resolution: {integrity: sha512-V6gygoYb/5EmNI+MEGrWkC+e6+Rr7mTmfHrxDbLzxQogBkgzo76rkok0Am6thgSF7Mv2nLOajAJj5vDJZEFn7g==}
@@ -1091,7 +1128,7 @@ snapshots:
       '@polkadot-api/utils': 0.1.2
       '@polkadot-api/wasm-executor': 0.1.1
       '@polkadot-api/ws-provider': 0.3.2
-      '@types/node': 22.8.4
+      '@types/node': 22.8.7
       commander: 12.1.0
       execa: 9.5.1
       fs.promises.exists: 1.1.4
@@ -1198,7 +1235,7 @@ snapshots:
 
   '@polkadot-api/smoldot@0.3.3':
     dependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.7
       smoldot: 2.0.30
     transitivePeerDependencies:
       - bufferutil
@@ -1289,9 +1326,21 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
+  '@subsquid/ss58-codec@1.2.3':
+    dependencies:
+      base-x: 4.0.0
+      blake2b: 2.1.4
+
+  '@subsquid/ss58@2.0.2':
+    dependencies:
+      '@subsquid/ss58-codec': 1.2.3
+      '@subsquid/util-internal-hex': 1.2.2
+
+  '@subsquid/util-internal-hex@1.2.2': {}
+
   '@types/estree@1.0.6': {}
 
-  '@types/node@22.8.4':
+  '@types/node@22.8.7':
     dependencies:
       undici-types: 6.19.8
 
@@ -1309,7 +1358,21 @@ snapshots:
 
   any-promise@1.3.0: {}
 
+  b4a@1.6.7: {}
+
   balanced-match@1.0.2: {}
+
+  base-x@4.0.0: {}
+
+  blake2b-wasm@2.4.0:
+    dependencies:
+      b4a: 1.6.7
+      nanoassert: 2.0.0
+
+  blake2b@2.1.4:
+    dependencies:
+      blake2b-wasm: 2.4.0
+      nanoassert: 2.0.0
 
   brace-expansion@2.0.1:
     dependencies:
@@ -1359,6 +1422,8 @@ snapshots:
   deepmerge-ts@7.1.3: {}
 
   detect-indent@7.0.1: {}
+
+  dotenv@16.4.5: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -1510,6 +1575,8 @@ snapshots:
       any-promise: 1.3.0
       object-assign: 4.1.1
       thenify-all: 1.6.0
+
+  nanoassert@2.0.0: {}
 
   normalize-package-data@6.0.2:
     dependencies:
