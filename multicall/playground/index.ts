@@ -11,3 +11,18 @@ console.log('My account:', myAccount)
 // AssetHub here
 const api = magicApi('ahpas')
 
+// 1. mint one token 
+
+// 2. mint an nft
+
+// 3. construct token send 
+
+// 4. construct nft send
+
+// 5. construct remark
+
+// 6. build the batc
+
+// 7. await the TX 
+
+// 8. console log the tx
