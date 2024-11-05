@@ -49,19 +49,22 @@ Base URI implementation is missing but clever devs also figured it out.
 
 Why is this important?
 
+It is easier to build an indexing service/processing service as we are aware that there is a thing for it
 
 ## The task
 
-Your task is to write a code that will change the metadata of the NFT in Viki's collection
+Your task is to write a code that will read data from AssetHub Polkadot about NFTs and submits the result to the paseo asset hub
 
 Your script has to contain:
-1. Read and validate a JSON metadata
-2. Create a collection on nfts pallet
-3. Set metadata, max supply and permission to mint publicly for 0.1 PAS
-4. Write a code to mint a token
-
+1. Read / query data from the Polkadot Assethub
+2. Process the amount of Collections, and list collections 
+3. query the current nexttokenid
+4. for the lucky number query additional stats such as nft floor
+5. create onchain remark with `blockNumber/<stats>`
+6. create remark with following format: task_multicall/address
 
 ### I feel like I need more
 
-Find a way how would you dynamically setmetadata for external users on the nfts pallet.
+Your task is to extend a support for `kodadot/stick` to support Paseo AssetHub / other testnet. 
+You will get an special merch and stickers
 
