@@ -23,6 +23,9 @@ importers:
       polkadot-api:
         specifier: ^1.6.5
         version: 1.6.5(jiti@2.3.3)(rxjs@7.8.1)(smoldot@2.0.30)
+      std-env:
+        specifier: ^3.7.0
+        version: 3.7.0
     devDependencies:
       '@types/node':
         specifier: ^22.8.7
@@ -834,6 +837,9 @@ packages:
 
   spdx-license-ids@3.0.20:
     resolution: {integrity: sha512-jg25NiDV/1fLtSgEgyvVyDunvaNHbuwF9lfNV17gSmPFAlYzdfNBlLtLzXTevwkPj7DhGbmN9VnmJIgLnhvaBw==}
+
+  std-env@3.7.0:
+    resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
 
   stdin-discarder@0.2.2:
     resolution: {integrity: sha512-UhDfHmA92YAlNnCfhmq0VeNL5bDbiZGg7sZ2IvPsXubGkiNa9EC+tUTsjBRsYUAz87btI6/1wf4XoVvQ3uRnmQ==}
@@ -1762,6 +1768,8 @@ snapshots:
       spdx-license-ids: 3.0.20
 
   spdx-license-ids@3.0.20: {}
+
+  std-env@3.7.0: {}
 
   stdin-discarder@0.2.2: {}
 

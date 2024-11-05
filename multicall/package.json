@@ -14,7 +14,8 @@
     "@polkadot-api/descriptors": "file:.papi/descriptors",
     "@subsquid/ss58": "^2.0.2",
     "dotenv": "^16.4.5",
-    "polkadot-api": "^1.6.5"
+    "polkadot-api": "^1.6.5",
+    "std-env": "^3.7.0"
   },
   "devDependencies": {
     "@types/node": "^22.8.7",
