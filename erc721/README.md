@@ -21,15 +21,20 @@ Well, yes but it needs some love from you <3
 Your task is to write an ERC-721 contract in ink! for Polkadot with a following functionality:
 1. Create an ink! smart contract that would represent ERC-721
 2. have an onchain metadata (returing a JSON string)
-
+3. Have a payable mint function
 
 Your script has to contain:
-1. Deploy of the smart contract
-2. Create a collection on nfts pallet
-3. Set metadata, max supply and permission to mint publicly for 0.1 PAS
-4. Write a code to mint a token
+1. Way to deploy of the smart contract
+2. Write a code to mint a token (should be mintable for 0.1 unit)
+3. create system.remark with following format: task_erc721/address
 
+> [!IMPORTANT]
+> at this point you should know how to add chain to papi, I recommend to use AlephZero Testnet
+
+> [!NOTE]
+> You need a [papi ink! client](https://papi.how/ink#ink-client)
 
 ### I feel like I need more
 
+Be inspired by other popular implementations. Maybe try to rewrite OpenSea SeaDrop into ink!? (InkDrop hehe)
 
