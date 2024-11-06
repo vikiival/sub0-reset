@@ -55,6 +55,10 @@ It is easier to build an indexing service/processing service as we are aware tha
 
 Your task is to write a code that will read data from AssetHub Polkadot about NFTs and submits the result to the paseo asset hub
 
+> [!NOTE]
+> Before you start hacking rund `npx papi add ahdot -n polkadot_asset_hub`
+> this will add polkadot asset hub + ofc you have to add it to the config
+
 Your script has to contain:
 1. Read / query data from the Polkadot Assethub
 2. Process the amount of Collections, and list collections 
