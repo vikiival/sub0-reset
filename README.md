@@ -5,13 +5,24 @@ This is a collection of workshops for the sub0
 The goal:
 > "I think you could really come up with fun things people can hack on" - Sacha
 
-## Our activities
+## Challenges
 
-- Pallets and Contracts
-- Standards
-- Multicall
-- Account Abstraction
+As you may observe there are multiple challenges you can hack on; starting from simple to more advanced
+
+### First steps
+
+Never played with Polkadot before? Good opportunity to try read/write:
+  - Standards
+  - Multicall
+
+### Warm up
+
 - Proxies
+- Pallets and Contracts
+
+### Pump it up
+
+- ERC-721ink!
 
 ## Dev
 
@@ -20,7 +31,7 @@ Each activity contains a challenge file with a set of task that needs to be done
 1. Install dependencies
 
 > [!NOTE]
-> Node v20+ and pnpm v9.6+ are recommended for this project.
+> Node v20+ and pnpm v9.6+ are recommended for this project. But `Bun` works too <3 
 
 ```bash
 pnpm i
