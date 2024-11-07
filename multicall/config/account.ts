@@ -4,6 +4,7 @@ import 'dotenv/config'
 import { process } from "std-env"
 import { getSs58AddressInfo } from "polkadot-api"
 import { MultiAddress } from "@polkadot-api/descriptors"
+export type Hex = Uint8Array | string;
 
 import * as ss58 from '@subsquid/ss58'
 
@@ -24,9 +25,11 @@ function getPrivateKey() {
 }
 
 export function publicKeyOf(seed?: string) {
-  const privateKey: string | undefined = seed || getPrivateKey()
+  let privateKey: Hex | undefined = seed || getPrivateKey()
 	if (!privateKey) {
-		throw new Error('No private key found')
+		console.warn('No private key found will use a random one')
+		privateKey = ed25519.utils.randomPrivateKey()
+		// throw new Error('No private key found')
 	}
   return ed25519.getPublicKey(privateKey)
 }
@@ -50,6 +53,3 @@ export function addressOf(address: Uint8Array): string {
   }
   return ss58.codec('polkadot').encode(value)
 }
-
-
-
