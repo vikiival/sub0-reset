@@ -37,6 +37,9 @@ Each activity contains a challenge file with a set of task that needs to be done
 pnpm i
 ```
 
+> [!IMPORTANT]
+> Probably you would need to use `npx papi` to setup the Polkadot API
+
 To run the challenge:
 
 ```bash
@@ -44,7 +47,7 @@ pnpm play
 ```
 
 > [!TIP]
-> Deno2/Bun should also work
+> Bun works too
 
 ## Partner activities
 
