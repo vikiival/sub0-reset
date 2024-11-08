@@ -100,6 +100,11 @@ Your script has to contain:
 3. Send both to another address
 4. create system.remark with following format: task_multicall/address
 
+
+### Notes
+
+Part of the implementation is in `config/calls.ts` file. Implement them first so you can use them in your script.
+
 > [!NOTE]
 > [You can find the faucet here](https://faucet.polkadot.io/?parachain=1000)
 
