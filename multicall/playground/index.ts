@@ -34,8 +34,6 @@ const mint = mintNonFungible({ api }, collectionId.toString());
 // 3. construct nft send
 const send = sendNonFungibleTo({ api }, myAccount);
 
-// 4. construct nft send
-
 // 4. construct remark
 const remark = makeRemark({ api }, `_`);
 // 5. build the batc
