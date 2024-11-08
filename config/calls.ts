@@ -1,6 +1,7 @@
 import { process } from "std-env"
 import { ApiPromise, CHAIN, Chain, magicApi } from "./api"
 import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
+import { toMultiAddress } from "./account"
 
 export function makeRemark({ api }: ApiPromise, memo: string): TxCallData {
 	const remark = Binary.fromText(memo)
@@ -11,17 +12,41 @@ export function makeRemark({ api }: ApiPromise, memo: string): TxCallData {
 	throw new Error('[UNIMPLEMENTED] makeRemark')
 }
 
+// DEV: you can edit the types, function params as you want
+type CreateCollectionParams = {
+	address: string
+}
 // DEV: you need to implement the following functions
-export function createCollection({ api }: ApiPromise): TxCallData {
+export function createCollection({ api }: ApiPromise, { address }: CreateCollectionParams): TxCallData {
 	// with `api` object construct a mint call
 	// the call you are looking for is in the `Assets` pallet
 	// TODO: remove the throw statement and do return with a call like
   // `return api.` and the call you are looking for
-	throw new Error('[UNIMPLEMENTED] mintAnAsset')
-	
+	// TODO: feel free to tune it up
+	const config = {
+		max_supply: undefined,
+		settings: 0n,
+		mint_settings: {
+			mint_type: {
+				type: 'Issuer',
+				value: undefined
+			},
+			start_block: undefined,
+			end_block: undefined,
+			default_item_settings: 0n,
+			price: undefined
+		}
+	}
+	// Address needs to be formatted as MultiAddress
+	const admin = toMultiAddress(address)
+	throw new Error('[UNIMPLEMENTED] createCollection')
+	// also do not forget to .decodedCall :)
 }
 
-export function mintAnAsset({ api }: ApiPromise): TxCallData {
+type MintAssetParams = {
+	assetId: string
+}
+export function mintAnAsset({ api }: ApiPromise, params: MintAssetParams): TxCallData {
 	const assetId = process.env.ASSET_ID
 	// with `api` object construct a mint call
 	// the call you are looking for is in the `Assets` pallet
@@ -30,7 +55,11 @@ export function mintAnAsset({ api }: ApiPromise): TxCallData {
 	throw new Error('[UNIMPLEMENTED] mintAnAsset')	
 }
 
-export function mintNonFungible({ api }: ApiPromise, collectionId: string): TxCallData {
+// DEV: you can edit the types, function params as you want
+type MintNonFungibleParams = {
+	collectionId: string
+}
+export function mintNonFungible({ api }: ApiPromise, params: MintNonFungibleParams): TxCallData {
 	// with `api` object construct a mint call
 	// the call you are looking for is in the `NFTs` pallet
 	// TODO: remove the throw statement and do return with a call like
@@ -41,6 +70,8 @@ export function mintNonFungible({ api }: ApiPromise, collectionId: string): TxCa
 export function sendAssetTo({ api }: ApiPromise, recipient: string): TxCallData {
 	// TODO: remove the throw statement and do return with a call like
   // `return api.` and the call you are looking for
+	// DEV: this is a hint for you
+	const who = toMultiAddress(recipient)
 	throw new Error('[UNIMPLEMENTED] sendAssetTo')
 }
 
