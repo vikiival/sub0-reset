@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "multicall": "jiti multicall/playground"
+    "erc721": "jiti erc721/playground",
+    "multicall": "jiti multicall/playground",
+    "proxies": "jiti proxies/playground",
+    "standards": "jiti standards/playground"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Viki Val",
+  "license": "MIT",
   "dependencies": {
     "@noble/curves": "^1.6.0",
     "@polkadot-api/descriptors": "file:.papi/descriptors",
