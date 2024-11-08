@@ -12,7 +12,7 @@ export const CHAIN: Chain = 'ahpas'
 
 export function magicApi<T>(chain: Chain = CHAIN) {
 	const client = createClient(getWsProvider(polkadotConfig[chain].wss));
-	return client.getTypedApi(typedApi[chain]);
+	return { api: client.getTypedApi(typedApi[chain]), disconnect: client.destroy }; 
 }
 
 
