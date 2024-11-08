@@ -88,6 +88,36 @@ export function makeBatch({ api }: ApiPromise, data: TxCallData | TxCallData[]):
 	// pallet name is mentioned in readme
 }
 
+export function createProxy({ api }: ApiPromise): TxCallData {
+	// with `api` object construct a call to create a proxy
+	// the call you are looking for is in the `Proxy` pallet
+	// TODO: remove the throw statement and do return with a call like
+	// `return api.` and the call you are looking for
+	throw new Error('[UNIMPLEMENTED] createProxy')
+}
+
+type ProxyParams = {
+	address: string
+}
+export function callAsProxy({ api }: ApiPromise, params: ProxyParams): TxCallData {
+	// with `api` object construct a call as proxy
+	// the call you are looking for is in the `Proxy` pallet
+	// TODO: remove the throw statement and do return with a call like
+	// `return api.` and the call you are looking for
+	throw new Error('[UNIMPLEMENTED] callAsProxy')
+}
+
+type CallDerivateParams = {
+	index: number
+}
+export function callAsDerivate({ api }: ApiPromise, params: CallDerivateParams): TxCallData {
+	// with `api` object construct a call as proxy
+	// the call you are looking for is in the `Utility` pallet
+	// TODO: remove the throw statement and do return with a call like
+	// `return api.` and the call you are looking for
+	throw new Error('[UNIMPLEMENTED] callAsDerivate')
+}
+
 // 1. check if data is an array or not
 // if yes build a batchAll
 // if no build a single call
