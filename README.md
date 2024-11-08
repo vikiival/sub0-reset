@@ -12,8 +12,8 @@ As you may observe there are multiple challenges you can hack on; starting from 
 ### First steps
 
 Never played with Polkadot before? Good opportunity to try read/write:
-  - Standards
   - Multicall
+  - Standards
 
 ### Warm up
 
