@@ -53,3 +53,10 @@ export function addressOf(address: Uint8Array): string {
   }
   return ss58.codec('polkadot').encode(value)
 }
+
+export function toMultiAddress(address: string): MultiAddress {
+	return {
+		type: "Id",
+		value: address,
+	}
+}
