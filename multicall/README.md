@@ -14,7 +14,7 @@ He has two types of wallet
 
 What I need to do?
 
-As an EVM developer I have basically a few options
+As an EVM developer I have a few options .. but as we'll see, none of them are that great!
 
 **1. Write a script**
 
@@ -56,8 +56,8 @@ Pros:
 Cons:
 
 - Not all wallets support it
-- Transaction builder only available for Safe wallet
-- have you seen the code? 😭
+- Transaction builder only available for Safe wallet (smart contract account wallet)
+- Have you seen the code? 😭
 
 > Use at your own risk
 > https://github.com/mds1/multicall?tab=readme-ov-file#batch-contract-writes
@@ -84,31 +84,36 @@ https://www.smartwallet.dev/guides/batch-transactions
 
 ## How so do you have a multicall on this Polkadot thing?
 
-Yes. - 3 types
+Ah ha - with Substrate chains there's a pallet called utility that helps you batch multiple calls in a single transaction.
 
-- batch
-- batch_all
-- force_batch
+There is:
+
+- `batch`: 	Send a batch of dispatch calls.
+- `batch_all`: 	Send a batch of dispatch calls and atomically execute them. The whole transaction will rollback and fail if any of the calls failed.
+- `force_batch`: Send a batch of dispatch calls. Unlike batch, it allows errors and won’t interrupt.
+
+_See [utility pallet docs](https://paritytech.github.io/polkadot-sdk/master/pallet_utility/pallet/dispatchables/)._
+
 
 Can I use the batch calls in Solidity?
 [Yes, on moonbeam](https://docs.moonbeam.network/builders/ethereum/precompiles/ux/batch/#find-a-contract-interactions-call-data)
 
-## The task
+## Your task
 
-Your task is to write a code that will mint one token, one nft from one address
-and sends it to another address in one transaction.
+Your task is to write code that will mint one token, one NFT from one address
+and sends it to another address in a single transaction.
 
-> [!IMPORTANT] make sure you have generated private key via `pnpm generate` and
+> [!IMPORTANT] make sure you have generated a private key via `pnpm generate` and
 > have it in your `.env`
 
-Your script has to contain:
+To achieve this, you must create a single batch call that:
 
-1. Create an NFT collection on nfts pallet
-2. Mint a NFT using nfts pallet in that collection
-3. Send both to another address
-4. create system.remark with following format: task_multicall/address
+1. Creates an NFT collection on NFTs pallet
+2. Mints a NFT using nfts pallet in that collection
+3. Sends it to `14UCmdjK31HFULz1J2pbKuTTnRdEhYXQspZMFPmodUWzpPjh`
+4. Create `system.remark` with following format: task_multicall/your_address
 
-### Notes
+### Hints!
 
 Part of the implementation is in `config/calls.ts` file. Implement them first so
 you can use them in your script.
@@ -127,4 +132,4 @@ Writing/Hacking: Try to come up with a new use case for batch calls in Polkadot.
 Implement batch calls in Solidity. You can either use approaches above or come
 up with your own.
 
-## 👉 To sumbit: [https://voedlx91m5k.typeform.com/to/reN3rKZo](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈
+## 👉 To submit: submit the link to your repo to the [challenge submission form](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈
