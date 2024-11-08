@@ -55,8 +55,5 @@ export function addressOf(address: Uint8Array): string {
 }
 
 export function toMultiAddress(address: string): MultiAddress {
-	return {
-		type: "Id",
-		value: address,
-	}
+	return MultiAddress.Id(address)
 }
