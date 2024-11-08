@@ -90,11 +90,18 @@ Can I use the batch calls in Solidity?
 
 Your task is to write a code that will mint one token, one nft from one address and sends it to another address in one transaction.
 
+> [!IMPORTANT]
+> make sure you have generated private key via `pnpm generate`
+> and have it in your `.env`
+
 Your script has to contain:
-1. Mint a token on assets pallet
-2. Mint a NFT using nfts pallet
+1. Create an NFT collection on nfts pallet
+2. Mint a NFT using nfts pallet in that collection
 3. Send both to another address
 4. create system.remark with following format: task_multicall/address
+
+> [!NOTE]
+> [You can find the faucet here](https://faucet.polkadot.io/?parachain=1000)
 
 
 ## I feel like I need more
@@ -107,7 +114,4 @@ Writing/Hacking: Try to come up with a new use case for batch calls in Polkadot.
 
 Implement batch calls in Solidity. You can either use approaches above or come up with your own.
 
-## To sumbit
-
-- Submit a link to the code
-- Attach a transaction hash
+## 👉 To sumbit: [https://voedlx91m5k.typeform.com/to/reN3rKZo](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈

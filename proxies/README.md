@@ -16,9 +16,16 @@ Yes. - it is called proxy.
 
 ## The task
 
+> [!IMPORTANT]
+> make sure you have generated private key via `pnpm generate`
+> and have it in your `.env`
+
 Your task is to pump you token with proxy accounts.
 
 Your script has to contain:
 1. Creation of a pure proxy account
 2. Usage of EOA as a proxy
 3. Usage of call via as_derivate
+
+> [!NOTE]
+> [You can find the faucet here](https://faucet.polkadot.io/?parachain=1000)

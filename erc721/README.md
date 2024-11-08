@@ -18,6 +18,10 @@ Well, yes but it needs some love from you <3
 
 ## The task
 
+> [!IMPORTANT]
+> make sure you have generated private key via `pnpm generate`
+> and have it in your `.env`
+
 Your task is to write an ERC-721 contract in ink! for Polkadot with a following functionality:
 1. Create an ink! smart contract that would represent ERC-721
 2. have an onchain metadata (returing a JSON string)
@@ -38,3 +42,4 @@ Your script has to contain:
 
 Be inspired by other popular implementations. Maybe try to rewrite OpenSea SeaDrop into ink!? (InkDrop hehe)
 
+## 👉 To sumbit: [https://voedlx91m5k.typeform.com/to/reN3rKZo](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈
