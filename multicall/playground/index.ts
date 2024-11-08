@@ -9,7 +9,7 @@ console.log('My account:', myAccount)
 
 // We will use AssetHub Paseo, but you can pass any valid
 // AssetHub here
-const api = magicApi('ahpas')
+const { api, disconnect } = magicApi('ahpas')
 
 // 1. mint one token 
 
@@ -26,3 +26,6 @@ const api = magicApi('ahpas')
 // 7. await the TX 
 
 // 8. console log the tx
+
+
+// 

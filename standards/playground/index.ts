@@ -1,7 +1,6 @@
-// import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
-import { addressOf, buildAccount, publicKeyOf } from "../../multicall/config/account"
-import { Chain, magicApi } from "../../multicall/config/api"
-
+import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
+import { addressOf, buildAccount, publicKeyOf } from "../../config/account"
+import { Chain, magicApi } from "../../config/api"
 
 // This is you account if you do not have one
 // use node run generate
@@ -25,9 +24,11 @@ const myLuckyNumber = (nextTokenIn: number = 1) => {
   return (lucky % nextTokenIn - 1)
 }
 
+console.log('My lucky number:', myLuckyNumber(10))
+
 // We will use AssetHub Paseo, but you can pass any valid
 // AssetHub here
-// const api = magicApi('ahpas')
+// const { api, disconnect } = magicApi('ahpas')
 
 // 1. Read / query data from the Polkadot Assethub
 
