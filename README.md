@@ -46,13 +46,13 @@ To run the challenge:
 pnpm name_of_the_challenge
 ```
 
-> [!TIP]
-> Bun works too
+> [!WARNING]
+> Make sure you have created a `.env` file with your private key
+> if you do not have one run
 
-## Partner activities
-
-- ERC721 in Sol vs ink! ?
-
+```bash
+pnpm generate
+```
 
 ## Links
 
