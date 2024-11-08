@@ -26,10 +26,10 @@ if (!collectionId) {
 }
 
 // 1. create a new collection
-const collection = createCollection({ api });
+const collection = createCollection({ api }, { address: myAccount });
 
 // 2. mint an nft
-const mint = mintNonFungible({ api }, collectionId.toString());
+const mint = mintNonFungible({ api }, { collectionId: collectionId.toString() });
 
 // 3. construct nft send
 const send = sendNonFungibleTo({ api }, myAccount);
