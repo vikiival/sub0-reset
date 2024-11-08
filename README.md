@@ -43,7 +43,7 @@ pnpm i
 To run the challenge:
 
 ```bash
-pnpm play
+pnpm name_of_the_challenge
 ```
 
 > [!TIP]
