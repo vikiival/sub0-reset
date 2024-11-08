@@ -1,6 +1,6 @@
 import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
-import { addressOf, buildAccount, publicKeyOf } from "../config/account"
-import { Chain, magicApi } from "../config/api"
+import { addressOf, buildAccount, publicKeyOf } from "../../config/account"
+import { Chain, magicApi } from "../../config/api"
 
 // This is you account if you do not have one
 // use node run generate

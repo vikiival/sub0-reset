@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "play": "jiti playground"
+    "multicall": "jiti multicall/playground"
   },
   "keywords": [],
   "author": "",
