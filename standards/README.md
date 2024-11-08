@@ -67,6 +67,11 @@ Your script has to contain:
 5. create onchain remark with `blockNumber/<stats>`
 6. create remark with following format: task_multicall/address
 
+> [!IMPORTANT]
+> make sure you have generated private key via `pnpm generate`
+> and have it in your `.env`
+> [You can find the faucet here](https://faucet.polkadot.io/?parachain=1000)
+
 ### I feel like I need more
 
 Your task is to extend a support for `kodadot/stick` to support Paseo AssetHub / other testnet. 
