@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "erc721": "jiti erc721/playground",
+    "generate": "jiti generate",
     "multicall": "jiti multicall/playground",
     "proxies": "jiti proxies/playground",
     "standards": "jiti standards/playground"
