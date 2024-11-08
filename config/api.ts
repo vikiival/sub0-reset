@@ -16,4 +16,5 @@ export function magicApi<T>(chain: Chain = CHAIN) {
 }
 
 
-export type ApiPromise = ReturnType<typeof magicApi>;
+export type FullApi = ReturnType<typeof magicApi>;
+export type ApiPromise = Pick<FullApi, 'api'>;

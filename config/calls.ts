@@ -2,7 +2,7 @@ import { process } from "std-env"
 import { ApiPromise, CHAIN, Chain, magicApi } from "./api"
 import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
 
-export function makeRemark(api: ApiPromise, memo: string) { //: TxCallData {
+export function makeRemark({ api }: ApiPromise, memo: string) { //: TxCallData {
 	const remark = Binary.fromText(memo)
 	// with `api` object construct a onchain remark 
 	// the call you are looking for is in the `System` pallet
@@ -10,7 +10,15 @@ export function makeRemark(api: ApiPromise, memo: string) { //: TxCallData {
 	return void 0
 }
 
-export function mintAnAsset(api: ApiPromise) { //: TxCallData {
+// DEV: you need to implement the following functions
+export function createCollection({ api }: ApiPromise) { //: TxCallData {
+	// with `api` object construct a mint call
+	// the call you are looking for is in the `Assets` pallet
+	throw new Error('[UNIMPLEMENTED] mintAnAsset')
+	return void 0
+}
+
+export function mintAnAsset({ api }: ApiPromise) { //: TxCallData {
 	const assetId = process.env.ASSET_ID
 	// with `api` object construct a mint call
 	// the call you are looking for is in the `Assets` pallet
@@ -18,23 +26,22 @@ export function mintAnAsset(api: ApiPromise) { //: TxCallData {
 	return void 0
 }
 
-export function mintNonFungible(api: ApiPromise) { //: TxCallData {
-	const collectionId = process.env.COLLECTION_ID
+export function mintNonFungible({ api }: ApiPromise, _collectionId: string) { //: TxCallData {
 	// with `api` object construct a mint call
 	// the call you are looking for is in the `NFTs` pallet
 	throw new Error('[UNIMPLEMENTED] mintNonFungible')
 	return void 0
 }
 
-export function sendAssetTo(api: ApiPromise, recipient: string) { //: TxCallData {
+export function sendAssetTo({ api }: ApiPromise, recipient: string) { //: TxCallData {
 	throw new Error('[UNIMPLEMENTED] sendAssetTo')
 }
 
-export function sendNonFungibleTo(api: ApiPromise, recipient: string) { //: TxCallData {
+export function sendNonFungibleTo({ api }: ApiPromise, recipient: string) { //: TxCallData {
 	throw new Error('[UNIMPLEMENTED] sendNonFungibleTo')
 }
 
-export function makeBatch(api: ApiPromise, data: TxCallData | TxCallData[]) { //: TxCallData {
+export function makeBatch({ api }: ApiPromise, data: TxCallData | TxCallData[]) { //: TxCallData {
 	throw new Error('[UNIMPLEMENTED] makeBatch')
 	// with `api` object construct a batch of calls
 	// which one you use it is up to you :)
