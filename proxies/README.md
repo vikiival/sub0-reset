@@ -70,12 +70,15 @@ Available calls
 > make sure you have generated private key via `pnpm generate`
 > and have it in your `.env`
 
-Your task is to pump you token with proxy accounts.
+Your task is to washtrade your nfts with proxy accounts.
 
 Your script has to contain:
-1. Creation of a pure proxy account
-2. Usage of EOA as a proxy
-3. Usage of call via as_derivate
+1. calculate your derived address (index: 1)
+2. setup proxy account for it to your own
+3. mint the nft to the derived address
+4. list it on the market
+5. buy it with your EOA
+6. make a remark with the following format: `task_proxy/address`
 
 > [!NOTE]
 > [You can find the faucet here](https://faucet.polkadot.io/?parachain=1000)
