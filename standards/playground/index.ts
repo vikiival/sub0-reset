@@ -37,7 +37,7 @@ console.log('My lucky number:', myLuckyNumber(10))
 
 // 3. Query the list of collections
 
-// 4. Query the current nexttokenid
+// 4. Query the `getNextCollectionId`
 
 // 5. for the lucky number query pricess for the NFTs in the collection (id is the lucky number)
 
