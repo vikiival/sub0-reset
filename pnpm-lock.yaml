@@ -17,6 +17,9 @@ importers:
       '@polkadot-api/descriptors':
         specifier: file:.papi/descriptors
         version: file:.papi/descriptors(polkadot-api@1.6.5(jiti@2.3.3)(rxjs@7.8.1)(smoldot@2.0.30))
+      '@polkadot-api/substrate-bindings':
+        specifier: ^0.9.3
+        version: 0.9.3
       '@subsquid/ss58':
         specifier: ^2.0.2
         version: 2.0.2
