@@ -2,6 +2,7 @@ import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
 import { addressOf, buildAccount, publicKeyOf } from "../../config/account"
 import { Chain, magicApi } from "../../config/api"
 import { makeRemark, submit } from "../../config/calls"
+import { getNextCollectionId } from "../../config/queries"
 
 // This is you account if you do not have one
 // use node run generate
@@ -38,8 +39,10 @@ console.log('My lucky number:', myLuckyNumber(10))
 // 3. Query the list of collections
 
 // 4. Query the `getNextCollectionId`
+// const nextCollectionId = await getNextCollectionId({ api })
+// const luckyNumber = myLuckyNumber(nextCollectionId)
 
-// 5. for the lucky number query pricess for the NFTs in the collection (id is the lucky number)
+// 5. for the lucky number query price for the NFTs in the collection (id is the lucky number)
 
 // 6. calculate the price (format to human readable format) // price / 10**10
 

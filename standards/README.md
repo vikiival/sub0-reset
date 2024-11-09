@@ -60,13 +60,17 @@ Your task is to write a code that will read data from AssetHub Polkadot about NF
 > this will add polkadot asset hub + ofc you have to add it to the config
 
 Your script has to contain:
-1. Read / query data from the **Polkadot Assethub**
-2. Process the amount of Collections, and list collections 
-3. query the current nexttokenid
-4. for the lucky number query additional stats such as nft floor
-5. create onchain remark with `blockNumber/<stats>` 
-6. create remark with following format: task_multicall/address
-7. submit it as a batch call on **Paseo Assethub**
+1. Create an API instance for the **Polkadot Assethub**
+2. Query the amount of collections
+3. Query the list of collections
+4. Query the `getNextCollectionId`
+5. for the lucky number query price for the NFTs in the collection (id is the lucky number)
+6. calculate the price (format to human readable format)  price  10**10
+7. initialize the api for **Paseo Assethub**
+8. create onchain remark with `blockNumber/<stats>` 
+9. create remark with following format: `task_standards/address`
+10. submit it as a batch call on **Paseo Assethub**
+11. console log the tx
 
 > [!IMPORTANT]
 > make sure you have generated private key via `pnpm generate`
