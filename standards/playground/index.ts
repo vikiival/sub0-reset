@@ -1,6 +1,7 @@
 import { Binary, TxCallData, TxFinalizedPayload } from "polkadot-api"
 import { addressOf, buildAccount, publicKeyOf } from "../../config/account"
 import { Chain, magicApi } from "../../config/api"
+import { makeRemark, submit } from "../../config/calls"
 
 // This is you account if you do not have one
 // use node run generate
@@ -28,20 +29,29 @@ console.log('My lucky number:', myLuckyNumber(10))
 
 // We will use AssetHub Paseo, but you can pass any valid
 // AssetHub here
+
+// 1.Create an API instance for the Polkadot Assethub
 // const { api, disconnect } = magicApi('ahpas')
 
-// 1. Read / query data from the Polkadot Assethub
+// 2. Query the amount of collections
 
-// 2. Process the amount of Collections, and list collections 
+// 3. Query the list of collections
 
-// 3. query the current nexttokenid
+// 4. Query the current nexttokenid
 
-// 4. for the lucky number query additional stats such as nft floor
+// 5. for the lucky number query pricess for the NFTs in the collection (id is the lucky number)
 
-// 5. construct remark
+// 6. calculate the price (format to human readable format) // price / 10**10
 
-// 6. build the batc
+// 7. initialize the api for Paseo AssetHub
+// const { api: paseoApi, disconnect: paseoBye } = magicApi("ahpas");
 
-// 7. await the TX 
+// 8. construct remark
+// const remark = makeRemark({ api: paseoApi }, `_`);
+// 9. sumbit and await for the TX
+// const tx = await submit([]);
 
-// 8. console log the tx
+// 10. console log the tx
+// console.log("BLOCK:", tx.block);
+// console.log("EVENTS:", tx.events);
+// console.log("HASH:", tx.txHash);
