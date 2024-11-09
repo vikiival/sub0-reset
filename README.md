@@ -11,6 +11,18 @@ As you may observe there are multiple challenges you can hack on; starting from 
 
 ### First steps
 
+1. Fork & clone the repo
+
+2. Generate your private key
+
+```bash
+pnpm generate
+```
+3. Play with challenges
+
+4. [Submit via this form](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈
+
+
 Never played with Polkadot before? Good opportunity to try read/write:
   - Multicall
   - Standards

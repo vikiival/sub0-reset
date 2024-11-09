@@ -56,16 +56,17 @@ It is easier to build an indexing service/processing service as we are aware tha
 Your task is to write a code that will read data from AssetHub Polkadot about NFTs and submits the result to the paseo asset hub
 
 > [!NOTE]
-> Before you start hacking rund `npx papi add ahdot -n polkadot_asset_hub`
+> Before you start hacking run `npx papi add ahdot -n polkadot_asset_hub`
 > this will add polkadot asset hub + ofc you have to add it to the config
 
 Your script has to contain:
-1. Read / query data from the Polkadot Assethub
+1. Read / query data from the **Polkadot Assethub**
 2. Process the amount of Collections, and list collections 
 3. query the current nexttokenid
 4. for the lucky number query additional stats such as nft floor
-5. create onchain remark with `blockNumber/<stats>`
+5. create onchain remark with `blockNumber/<stats>` 
 6. create remark with following format: task_multicall/address
+7. submit it as a batch call on **Paseo Assethub**
 
 > [!IMPORTANT]
 > make sure you have generated private key via `pnpm generate`

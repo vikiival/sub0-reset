@@ -7,6 +7,7 @@ import {
   makeRemark,
   mintNonFungible,
   sendNonFungibleTo,
+  submit,
 } from "../../config/calls";
 import { getNextCollectionId } from "../../config/queries"
 
@@ -36,9 +37,10 @@ const send = sendNonFungibleTo({ api }, myAccount);
 
 // 4. construct remark
 const remark = makeRemark({ api }, `_`);
-// 5. build the batc
-const batch = makeBatch({ api }, []);
-
-// 7. await the TX
+// 5. sumbit and await for the TX
+const tx = await submit([]);
 
 // 8. console log the tx
+console.log("BLOCK:", tx.block);
+console.log("EVENTS:", tx.events);
+console.log("HASH:", tx.txHash);
