@@ -22,6 +22,7 @@
     "@subsquid/ss58": "^2.0.2",
     "dotenv": "^16.4.5",
     "polkadot-api": "^1.6.5",
+    "rc9": "^2.1.2",
     "std-env": "^3.7.0"
   },
   "devDependencies": {
