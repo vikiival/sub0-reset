@@ -25,9 +25,14 @@ npx papi
 pnpm generate
 ```
 
-4. Play with challenges
+4. [Obtain a PAS token from the faucet](https://faucet.polkadot.io/?parachain=1000)
 
-5. [Submit via this form](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈
+5. Play with challenges
+
+> ![NOTE]
+> If you are stuck, you can always ask for help in the [Web0 Telegram](https://t.me/joinWebzero)
+
+6. [Submit via this form](https://voedlx91m5k.typeform.com/to/reN3rKZo) 👈
 
 
 Never played with Polkadot before? Good opportunity to try read/write:
